@@ -12,15 +12,13 @@
       This simple Library adds integer and double parsing methods for ReadOnlySpan&gt;char&lt; found in .NET but missing in .NET Framework and .NET Standard. 
       Each parsing method also has a "TryParse" variant.
     </Description>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
         <None Include="..\LICENSE" Pack="true" PackagePath="LICENSE"/>
   </ItemGroup>
-
-  <PropertyGroup>
-        <PackageLicenseFile>LICENSE</PackageLicenseFile>
-  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Memory" Version="4.5.5" />
