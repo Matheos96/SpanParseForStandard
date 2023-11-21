@@ -13,11 +13,11 @@
       Each parsing method also has a "TryParse" variant.
     </Description>
     <IncludeContentInPack>true</IncludeContentInPack>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="$(SolutionDir)LICENSE" Pack="true" PackagePath="" />
+    <None Include="../LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
