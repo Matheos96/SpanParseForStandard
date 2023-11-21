@@ -40,6 +40,7 @@ namespace SpanParseForStandard
 		public static double ParseDouble(ReadOnlySpan<char> charSpan)
 		{
 			var trimmed = charSpan.Trim();
+			var isNegative = trimmed[0] == '-';
 
 			//Find decimal separator
 			var separator = NumberFormatInfo.CurrentInfo.NumberDecimalSeparator.AsSpan();
@@ -53,12 +54,17 @@ namespace SpanParseForStandard
 				}
 			}
 
+			// If we have no decimal separator we are basically parsing an integer
+			if (separatorStart == -1) return ParseInt(trimmed);
+
 			// Integer part
 			double result = ParseInt(trimmed.Slice(0, separatorStart));
 
 			// Decimal part
 			var decimalPart = trimmed.Slice(separatorStart + separator.Length);
-			result += ParseInt(decimalPart) / Math.Pow(10, decimalPart.Length);
+			var decimals = ParseInt(decimalPart) / Math.Pow(10, decimalPart.Length);
+
+			result += isNegative ? -decimals : decimals; 
 
 			return result;
 		}
