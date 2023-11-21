@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <!-- NuGet -->
+    <PackageId>io.github.matheos96.SpanParseForStandard</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Matheos Mattsson</Authors>
+    <PackageTags>Span;ReadOnlySpan;Parsing;Convert;Double;Integer:.NET Standard;.NET Framework</PackageTags>
+    <Description>
+      This simple Library adds integer and double parsing methods for ReadOnlySpan&gt;char&lt; found in .NET but missing in .NET Framework and .NET Standard. 
+      Each parsing method also has a "TryParse" variant.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+        <None Include="LICENSE" Pack="true" PackagePath="LICENSE"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+  </ItemGroup>
+
+  
+
+</Project>
