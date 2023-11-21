@@ -6,7 +6,7 @@
     <!-- NuGet -->
     <PackageId>io.github.matheos96.SpanParseForStandard</PackageId>
     <Title>SpanParseForStandard</Title>
-    <Version>1.0.0-1</Version>
+    <Version>1.0.1</Version>
     <Authors>matheos</Authors>
     <PackageTags>Span;ReadOnlySpan;Parsing;Convert;Double;Integer;Standard;Framework</PackageTags>
     <Description>
