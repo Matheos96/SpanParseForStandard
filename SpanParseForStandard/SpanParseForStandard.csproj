@@ -5,12 +5,12 @@
 
     <!-- NuGet -->
     <PackageId>io.github.matheos96.SpanParseForStandard</PackageId>
+    <Title>SpanParseForStandard</Title>
     <Version>1.0.0</Version>
-    <Authors>Matheos Mattsson</Authors>
-    <PackageTags>Span;ReadOnlySpan;Parsing;Convert;Double;Integer:.NET Standard;.NET Framework</PackageTags>
+    <Authors>matheos</Authors>
+    <PackageTags>Span;ReadOnlySpan;Parsing;Convert;Double;Integer;Standard;Framework</PackageTags>
     <Description>
-      This simple Library adds integer and double parsing methods for ReadOnlySpan&gt;char&lt; found in .NET but missing in .NET Framework and .NET Standard. 
-      Each parsing method also has a "TryParse" variant.
+      This simple Library adds integer and double parsing methods for ReadOnlySpan&lt;char&gt; found in .NET but missing in .NET Framework and .NET Standard. Each parsing method also has a "TryParse" variant.
     </Description>
     <IncludeContentInPack>true</IncludeContentInPack>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
